@@ -44,6 +44,204 @@
         console.log(2 > 3);
         console.log(10 == 10);
 
+        var light = "blue";
+        if (light == "green") {
+            console.log("Drive")
+        } else if (light == "orange") {
+            console.log("Get ready")
+        } else if (light == "red") {
+            console.log("Dont' drive")
+        } else {
+            //this block will run if no condition matches
+            console.log("The light is not green, orange, or red");
+        }
+
+        //converting the previous if-else example with switch-case
+        switch (light) {
+            case 'green':
+                console.log("Drive");
+                break;
+            case 'orange':
+                console.log("Get ready");
+                break;
+            case 'red':
+                console.log("Don't drive");
+                break;
+            default:
+                //this block will run if no condition matches
+                console.log('The light is not green, orange, or red');
+        }
+
+        var day = 'Sunday';
+        switch (day) {
+            case 'Monday':
+                console.log('Read a book');
+                break;
+            case 'Tuesday':
+                console.log('Watch a movie');
+                break;
+            case 'Wednesday':
+                console.log('Read a book');
+                break;
+            case 'Thursday':
+                console.log('Play basketball');
+                break;
+            case 'Friday':
+                console.log('Socialize');
+                break;
+            case 'Saturday':
+                console.log('Chill');
+                break;
+            case 'Sunday':
+                console.log('Have barbecue');
+                break;
+            default:
+                //this block will run if no condition matches
+                console.log('There is no such day');
+        }
+
+
+        var score;
+        if (score >= 90 && score <= 100) {
+            score = 'Відмінно';
+        } else if (score >= 70 && score <= 89) {
+            score = 'Добре';
+        } else {
+            score = 'Незадовільно';
+        }
+        console.log(score);
+
+
+        //nested loops - one inside another
+        for (var firstNum = 0; firstNum < 2; firstNum++) {
+            for (var secondNum = 0; secondNum < 10; secondNum++) {
+                console.log(firstNum + ", " + secondNum);
+            }
+        }
+
+        var cubes = 'ABCDEFG';
+        //styling console output using CSS with a %c format specifier
+        for (var i = 0; i < cubes.length; i++) {
+            var styles = "font-size: 40px; border-radius: 10px; border: 1px solid blue; background: pink; color: purple";
+            console.log("%c" + cubes[i], styles)
+        }
+
+        let age = 20;
+        if (age >= 18) {
+            console.log("You can vote");
+        }
+
+        let result = 45;
+        if (result > 40) {
+            console.log("You passed the test");
+        } else {
+            console.log("You did not pass the test");
+        }
+
+        for (var i = 1; i <= 3; i++) {
+            console.log(i);
+        }
+
+        console.log("----------");
+        for (var i = 10; i > 0; i--) {
+            console.log(i);
+        }
+
+
+        console.log("----------");
+        for (i = 0; i < 2; i++) {
+            for (var j = 0; j < 3; j++) {
+                console.log("Hello");
+            }
+        }
+
+        console.log("----------");
+        if (i <= 5) {
+            console.log("Hello");
+        } else if (i <= 10) {
+            console.log("Goodnight");
+        } else {
+            console.log("Goodbye");
+        }
+
+        console.log("----------");
+        i = 3;
+        if (i == 2 || i == 3) {
+            console.log("Hello");
+        } else {
+            console.log("Goodbye");
+        }
+
+        console.log("----------");
+        i = 3;
+        if (i < 5) {
+            console.log("Hello");
+        } else {
+            console.log("Goodbye");
+        }
+
+
+        console.log("----------");
+        i = 1;
+        if (i == 0 && i == 1) {
+            console.log("Hello");
+        } else {
+            console.log("Goodbye");
+        }
+
+        console.log("-----test-----");
+        i = 1;
+        for (i = 0; i < 2; i++) {
+            console.log("Hello");
+        }
+
+
+        console.log("----------");
+        var i = 0;
+        while (i < 3) {
+            console.log("Hello");
+            i++;
+        }
+
+        console.log("----------");
+        for (i = 0; i < 2; i++) {
+            for (var j = 0; j < 3; j++) {
+                console.log("Hello");
+            }
+        }
+
+
+        console.log("----------");
+        if (i == 2 || i == 3) {
+            console.log("Hello");
+        } else {
+            console.log("Goodbye");
+        }
+
+        console.log("----------");
+        var i = 0;
+        while (i < 3) {
+            console.log("Hello");
+            i++;
+        }
+
+
+        console.log("-----test-----");
+        var i = 7;
+
+        var j = 2;
+
+        if (i < 7 || j < 5) {
+
+            console.log("Hello");
+
+        } else {
+
+            console.log("Goodbye");
+
+        }
+
+
     </script>
 
 </body>
