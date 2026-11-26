@@ -450,6 +450,77 @@
         console.log(resultObj); // { prop: 10 }
 
 
+        //creating an object
+        var virtualPet = {
+            sleepy: true,
+            nap: function () {
+                this.sleepy = false
+            }
+        }
+        console.log(virtualPet.sleepy) // true
+        virtualPet.nap()
+        console.log(virtualPet.sleepy) // false
+
+        function addTwoNums(a, b) {
+            console.log(a + b)
+        }
+
+        function randomNum() {
+            return Math.floor((Math.random() * 10) + 1);
+        }
+        function specificNum() { return 42 };
+
+        var useRandom = true;
+
+        var getNumber;
+
+        if (useRandom) {
+            getNumber = randomNum
+        } else {
+            getNumber = specificNum
+        }
+
+        addTwoNums(getNumber(), getNumber())
+
+
+        var globalVar = 77;
+
+        function scopeTest() {
+            var localVar = 88;
+        }
+
+        //console.log(localVar);
+
+
+        function meal(animal) {
+            animal.food = animal.food + 10;
+        }
+
+        var dog = {
+            food: 10
+        };
+        meal(dog);
+        meal(dog);
+
+        console.log(dog.food);
+
+
+        function two() {
+            return 2;
+        }
+
+        function one() {
+            return 1;
+        }
+
+        function calculate(initialValue, incrementValue) {
+            return initialValue() + incrementValue() + incrementValue();
+        }
+
+        console.log(calculate(two, one));
+
+
+
     </script>
 
 </body>
