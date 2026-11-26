@@ -423,8 +423,32 @@
         }
 
 
-        throw new Error();
+        //throw new Error();
         console.log("Hello");
+
+
+        // functions
+        function objectMaker(val) {
+            return {
+                prop: val
+            }
+        }
+        console.log(objectMaker(20))
+
+        // Function to double a number
+        function doubleIt(num) {
+            return num * 2;
+        }
+
+        // Function to create an object with a 'prop' key
+        function objectMaker(val) {
+            return { prop: val };
+        }
+
+        // Chaining functions and returning values
+        let resultObj = objectMaker(doubleIt(5));
+        console.log(resultObj); // { prop: 10 }
+
 
     </script>
 
