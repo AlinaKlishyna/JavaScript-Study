@@ -17,6 +17,7 @@
     </div>
 
     <script>
+        // Вывод в консоль и комментарии
         // Comment
 
         /*
@@ -29,6 +30,7 @@
         console.log("Hello " + "there, " + "World");
         console.log("Hello", "there,", "World")
 
+        // Арифметические и сравнительные операторы
         /* Arithmetic operators in JS:
             + addition subtraction
             * multiplication
@@ -49,6 +51,7 @@
         console.log(2 > 3);
         console.log(10 == 10);
 
+        // Условные конструкции: if и switch
         var light = "blue";
         if (light == "green") {
             console.log("Drive")
@@ -117,6 +120,7 @@
         console.log(score);
 
 
+        // Циклы и повторение действий
         //nested loops - one inside another
         for (var firstNum = 0; firstNum < 2; firstNum++) {
             for (var secondNum = 0; secondNum < 10; secondNum++) {
@@ -246,6 +250,7 @@
 
         }
 
+        // Перебор элементов массива
         function listArrayItems(arr) {
             for (var i = 0; i < arr.length; i++) {
                 if (arr[i] == 'red') {
@@ -258,6 +263,7 @@
 
         listArrayItems(["red", "blue"]);
 
+        // Создание объектов и работа с их свойствами
         var user = {}; //create an object
 
         //creating an object with properties and their values
@@ -281,6 +287,7 @@
             console.log(drone[arrOfKeys[i]])
         }
 
+        // Создание массива с помощью функции
         function arrayBuilder(one, two, three) {
             var arr = [];
             arr.push(one);
@@ -291,6 +298,7 @@
         var simpleArr = arrayBuilder('apple', 'pear', 'plum');
         arrayBuilder(simpleArr); // ['apple', 'pear', 'plum']
 
+        // Добавление свойств и методов объектам
         var favCar = {};
         favCar.color = "red";
         favCar.convertible = true;
@@ -323,7 +331,7 @@
         car.turnTheKey();
         car.lightsOn()
 
-        // Type errors
+        // Ошибки и обработка исключений
 
         // ReferenceError
         // console.log(username); // Uncaught ReferenceError: username is not defined
@@ -431,7 +439,7 @@
         console.log("Hello");
 
 
-        // functions
+        // Примеры использования функций
         function objectMaker(val) {
             return {
                 prop: val
@@ -489,6 +497,7 @@
 
         var globalVar = 77;
 
+        // Область видимости переменных
         function scopeTest() {
             var localVar = 88;
         }
@@ -496,6 +505,7 @@
         //console.log(localVar);
 
 
+        // Передача объектов в функции
         function meal(animal) {
             animal.food = animal.food + 10;
         }
@@ -509,6 +519,7 @@
         console.log(dog.food);
 
 
+        // Передача функций в качестве аргументов
         function two() {
             return 2;
         }
@@ -524,6 +535,7 @@
         console.log(calculate(two, one));
 
 
+        // Примеры ООП: классы, наследование и композиция
         class Birdd {
             useWings() {
                 console.log("Flying!");
@@ -732,6 +744,7 @@
         cuddles.makeSound(false); // Roar!
         cuddles.makeSound(true); // purr, Roar!
 
+        // Доступ к свойствам объекта по динамическому ключу
         function testBracketsDynamicAccess() {
             var dynamicKey;
             if (Math.random() > 0.5) {
@@ -749,6 +762,7 @@
         }
         testBracketsDynamicAccess();
 
+        // Шаблонные строки и коллекции Set
         // it's possible to perform arithmetic operation inside a template literal expression
         console.log(`${1 + 1 + 1 + 1 + 1} stars!`)
 
@@ -756,7 +770,7 @@
         const uniqueFruits = new Set(repetitiveFruits);
         console.log(uniqueFruits);
 
-        // spread operators
+        // Оператор spread: объединение массивов
         const fruits = ['apple', 'pear', 'plum'];
         const berries = ['blueberry', 'strawberry'];
         const fruitsAndBerries = [...fruits, ...berries]; // concatenate
@@ -769,16 +783,19 @@
         console.log(flyingCar); // {wings: 2, wheels: 4}
 
 
+        // Деструктуризация массива
         const meal2 = ["soup", "steak", "ice cream"];
         // Destructure the first item from the array into the variable starter
         let [starter] = meal2;
         console.log(starter);
 
 
+        // Подстановка значений в шаблонную строку
         let food = "Chocolate";
         console.log(`My favourite food is ${food}`);
 
 
+        // Копирование объекта с помощью spread
         let obj = {
             key: 1,
             value: 4
@@ -790,12 +807,14 @@
         console.log(output.value);
 
 
+        // Rest-параметры функции
         function count(...basket) {
             console.log(basket.length)
         }
 
         count(10, 9, 8, 7, 6);
 
+        // DOM: обработка событий и изменение страницы
         const target = document.querySelector('body')
         function handleClick() {
             console.log('clicked the body')
