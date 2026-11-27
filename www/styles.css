@@ -3,3 +3,11 @@ html {
     padding: 0;
     background-color: rgb(144, 214, 191);
 }
+
+head {
+    min-height: 50vh;
+}
+
+body {
+    min-height: 100vh;
+}

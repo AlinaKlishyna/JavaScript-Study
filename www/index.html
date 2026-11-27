@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="styles.css">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
     <title>Learn JavaScript</title>
 </head>
 
 <body>
     <noscript>On JavaScript</noscript>
+    <div>
+        <h1 onclick="handleClick2()">Example Domain</h1>
+    </div>
 
     <script>
         // Comment
@@ -792,6 +796,15 @@
 
         count(10, 9, 8, 7, 6);
 
+        const target = document.querySelector('body')
+        function handleClick() {
+            console.log('clicked the body')
+        }
+        target.addEventListener('click', handleClick)
+
+        function handleClick2() {
+            console.log('clicked the heading')
+        }
 
     </script>
 
